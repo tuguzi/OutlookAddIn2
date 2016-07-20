@@ -26,7 +26,7 @@ Public Class ThisAddIn
         Dim myAdr As String = Application.GetNamespace("MAPI").Session.CurrentUser.AddressEntry.GetExchangeUser.PrimarySmtpAddress
         Dim mail As Outlook.MailItem = TryCast(Item, Outlook.MailItem)
 
-        'メールオブジェクトの場合は以下継続する
+        'メールオブジェクトの場合は以下継続するのです
         If Not IsNothing(mail) Then
             'MessageBox.Show("Application ItemSend As Mail")
 
